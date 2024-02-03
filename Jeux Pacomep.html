@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeux Pacomep</title>
+    <!-- Spécifiez l'icône -->
+    <link rel="icon" href="C:\Users\PacomePIETERAERENTS\Downloads\Site Jeux Pacomep\Icones du site\Icone site.ico" type="image/x-icon">
+    <!-- Spécifiez l'icône pour les appareils mobiles (iOS) -->
+    <link rel="apple-touch-icon" href="C:\Users\PacomePIETERAERENTS\Downloads\Site Jeux Pacomep\Icones du site\Icone site.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0000ff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .game {
+            margin: 10px;
+            border: 1.5px solid #ccc;
+            border-radius: 25px;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .game img {
+            width: 300px;
+            height: 225px;
+        }
+
+
+
+
+
+        /* Style CSS pour le lien Infinity */
+        #infinity-link {
+            background-color: #00b607; /* Couleur de fond initiale */
+            color: #FFFFFF; /* Couleur du texte */
+            padding: 10px 20px; /* Espacement intérieur */
+            text-decoration: none; /* Pas de soulignement */
+            border-radius: 7px; /* Bord arrondi */
+            display: inline-block; /* Affichage en ligne avec bloc */
+            transition: background-color 0.3s; /* Transition de couleur de fond */
+        }
+        /* Style CSS pour le lien Infinity lorsqu'il est survolé */
+        #infinity-link:hover {
+            background-color: #65a368; /* Couleur de fond bleu foncé lors du survol */
+        }
+
+
+
+        /* Style CSS pour le lien Switch */
+        #switch-link {
+            background-color: #0000FF; /* Couleur de fond initiale */
+            color: #FFFFFF; /* Couleur du texte */
+            padding: 10px 20px; /* Espacement intérieur */
+            text-decoration: none; /* Pas de soulignement */
+            border-radius: 7px; /* Bord arrondi */
+            display: inline-block; /* Affichage en ligne avec bloc */
+            transition: background-color 0.3s; /* Transition de couleur de fond */
+        }
+        /* Style CSS pour le lien Switch lorsqu'il est survolé */
+        #switch-link:hover {
+            background-color: #8078c4; /* Couleur de fond bleu foncé lors du survol */
+        }
+
+
+
+        /* Style CSS pour le lien Jeu du ballon */
+        #parcours-link {
+            background-color: #ff0000; /* Couleur de fond initiale */
+            color: #FFFFFF; /* Couleur du texte */
+            padding: 10px 20px; /* Espacement intérieur */
+            text-decoration: none; /* Pas de soulignement */
+            border-radius: 7px; /* Bord arrondi */
+            display: inline-block; /* Affichage en ligne avec bloc */
+            transition: background-color 0.3s; /* Transition de couleur de fond */
+        }
+        /* Style CSS pour le lien Switch lorsqu'il est survolé */
+        #parcours-link:hover {
+            background-color: #ff8080; /* Couleur de fond rouge foncé lors du survol */
+        }
+
+
+
+        /* Style CSS pour le lien */
+        #jeu-du-ballon-link {
+            background-color: #99ffff; /* Couleur de fond initiale */
+            color: #000000; /* Couleur du texte */
+            padding: 10px 20px; /* Espacement intérieur */
+            text-decoration: none; /* Pas de soulignement */
+            border-radius: 7px; /* Bord arrondi */
+            display: inline-block; /* Affichage en ligne avec bloc */
+            transition: background-color 0.3s; /* Transition de couleur de fond */
+        }
+        /* Style CSS pour le lien Switch lorsqu'il est survolé */
+        #jeu-du-ballon-link:hover {
+            background-color: #66cccc; /* Couleur de fond bleu clair foncé lors du survol */
+        }
+
+
+
+        /* Style CSS pour le lien */
+        #l-aventure-du-ballon-link {
+            background: radial-gradient(circle, #780067, #000778); /* Couleur de fond initiale */
+            color: #FFFFFF; /* Couleur du texte */
+            padding: 10px 20px; /* Espacement intérieur */
+            text-decoration: none; /* Pas de soulignement */
+            border-radius: 7px; /* Bord arrondi */
+            display: inline-block; /* Affichage en ligne avec bloc */
+            transition: background-color 0.3s; /* Transition de couleur de fond */
+        }
+        /* Style CSS pour le lien Switch lorsqu'il est survolé */
+        #l-aventure-du-ballon-link:hover {
+            background: radial-gradient(circle, #000778, #780067);
+        }
+
+
+
+        /* Style CSS pour le lien */
+        #canon-ghost-link {
+            background: #00a0b4; /* Couleur de fond initiale */
+            color: #FFFFFF; /* Couleur du texte */
+            padding: 10px 20px; /* Espacement intérieur */
+            text-decoration: none; /* Pas de soulignement */
+            border-radius: 7px; /* Bord arrondi */
+            box-sizing: border-box;
+            border: 0px;
+            display: inline-block; /* Affichage en ligne avec bloc */
+            transition: background-color 0.3s; /* Transition de couleur de fond */
+        }
+        /* Style CSS pour le lien Switch lorsqu'il est survolé */
+        #canon-ghost-link:hover {
+            background: #aadcdc;
+            border: 2px solid #00a0b4;
+            color: #00a0b4;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+    <header>
+        <h1>Jeux Pacomep</h1>
+    </header>
+    <div class="container">
+
+
+
+        <div class="game">
+            <h2>Infinity</h2>
+            <img src="Infinity.png" alt="Infinity">
+            <p>Flèche haut, espace ou cliquez pour sauter !</p>
+            <a href="https://scratch.mit.edu/projects/847773533/" target="_blank" id="infinity-link">Infinity</a>
+        </div>
+
+
+
+        <div class="game">
+            <h2>Switch</h2>
+            <img src="Switch.png" alt="Switch">
+
+            <p>Cliquez ou appuyez sur n'importe quelle touche du clavier pour contrôler le jeu !</p>
+
+            <a href="https://scratch.mit.edu/projects/934811882/" target="_blank" id="switch-link">Switch</a>
+        </div>
+
+
+
+        <div class="game">
+            <h2>Parcours</h2>
+            <img src="Parcours.png" alt="Parcours">
+
+            <p>Parcourez les différents niveaux !</p>
+
+            <a href="https://scratch.mit.edu/projects/764524980/" target="_blank" id="parcours-link">Parcours</a>
+        </div>
+
+
+
+        <div class="game">
+            <h2>Jeu du ballon</h2>
+            <img src="Jeu du ballon.png" alt="Jeu du ballon">
+
+            <p>Touchez tous les ballons sauf les pirates ! 🎈</p>
+
+            <a href="https://scratch.mit.edu/projects/479721594/" target="_blank" id="jeu-du-ballon-link">Jeu du ballon</a>
+        </div>
+
+
+
+        <div class="game">
+            <h2>L'aventure du ballon</h2>
+            <img src="L'aventure du ballon.png" alt="L'aventure du ballon">
+
+            <p> Parcourir tous les niveaux Avec votre ballon bleu volant ! </p>
+
+            <a href="https://scratch.mit.edu/projects/728113065/" target="_blank" id="l-aventure-du-ballon-link">L'aventure du ballon</a>
+        </div>
+
+
+
+        <div class="game">
+            <h2>Canon ghost</h2>
+            <a href="https://scratch.mit.edu/projects/728113065/" target="_blank">
+                <img src="Canon ghost.png" alt="Canon ghost">
+</a>
+
+            <p>Une chasse aux fantomes ! Tirez a l'aide du joystick sur tous les fantômes que vous voyez</p>
+
+            <a href="https://scratch.mit.edu/projects/728113065/" target="_blank" id="canon-ghost-link">Canon ghost</a>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
